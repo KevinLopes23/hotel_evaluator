@@ -287,7 +287,7 @@ class HotelEvaluator:
             "results": results
         }
 
-    def parse_comment(self, comment: str) -> dict:
+   
         tokens = categorizar_tokens(comment)
         if any(cat == "Desconhecido" for _, cat in tokens):
             return {"error": "Comentário inválido conforme a gramática fornecida"}
